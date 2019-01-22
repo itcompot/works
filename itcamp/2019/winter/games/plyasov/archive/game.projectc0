@@ -1,0 +1,22 @@
+[project]
+title = Side scroller tutorial
+
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[input]
+use_accelerometer = 0
+
+[display]
+width = 1024
+height = 576
+dynamic_orientation = 1
+variable_dt = 1
+
+[physics]
+scale = 0.02
+type = 2D
+
+[script]
+shared_state = 1
+

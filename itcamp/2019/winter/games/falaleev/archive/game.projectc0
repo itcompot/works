@@ -1,5 +1,5 @@
 [project]
-title = Falaleev Slava
+title = falaleev
 
 [bootstrap]
 main_collection = /main/main.collectionc
@@ -9,8 +9,8 @@ game_binding = /input/game.input_bindingc
 use_accelerometer = 0
 
 [display]
-width = 1280
-height = 720
+width = 1024
+height = 576
 dynamic_orientation = 0
 variable_dt = 1
 

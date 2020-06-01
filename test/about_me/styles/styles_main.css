@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic);
+
+* {
+	font-family: 'Poiret One', cursive !important;
+}
+
+body , html {
+	width: 100%;
+	height: 100%;
+	background: #272E57;
+}
+
+header, .logo {
+	background: none;
+}
+
+header nav {
+	display: none;
+}
+
+#menu_logo_symbol {
+	width: 2.55em;
+	height: 2.55em;
+	z-index: 5 !important;
+}
+
+#menu_logo_close {
+	display: none;
+	width: 2.5em;
+	height: 0.5em;
+	position: absolute;
+	top: 1.2em;
+	left: 0.5em;
+	background: #5C6866;
+	transform: rotate(45deg);
+	z-index: 2;
+}
+
+#menu_logo_close:after {
+	content: "";
+	width: 2.5em;
+	height: 0.5em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #5C6866;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+
+.left_aside {
+	z-index: 1;
+}
+
+.right_aside {
+	height: 100%;
+}
+
+nav ul li:nth-of-type(2) a{
+	color: #d3685e;
+}
+
+nav ul li:nth-of-type(3) a{
+	color: white;
+}
+
+.left_aside nav #contacts_block {
+	background: #4e5f61;
+}
+
+p {
+	width: 30%;
+	margin: 1.5em auto;
+	color: lightgrey;
+	padding: 1%;
+	position: relative;
+	float: right;
+	font-size: 1.3em;
+	text-align: right;
+	margin-right: 0.5%;
+}
+
+p strong {
+	display: inline-block;
+	text-align: right;
+	color: #ff6e61;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+p span {
+	color: #ff6e61;
+}
+
+@media all and (min-width: 1000px) {
+	.right_aside {
+		background: url(bg.jpg) no-repeat;
+		background-size: auto 100%;
+	}
+	html {
+		overflow: hidden;
+	}
+}
+
+@media all and (device-aspect-ratio: 4/3 ) and (max-width: 1024px) {
+	.right_aside {
+		background-position: 50%;
+	}
+	p {
+		position: relative;
+		top: 30px;
+	}
+}
+
+@media all and (min-device-aspect-ratio: 16/9 ) {
+	.right_aside {
+		background-position: 50%;
+	}
+}
+
+@media all and (max-width: 1280px) {
+	.right_aside {
+		background-position: 50%;
+	}
+}
